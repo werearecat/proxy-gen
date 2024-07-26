@@ -1,5 +1,5 @@
 # Định nghĩa đường dẫn tới file chứa các URL
-$filePath = "proxy-gen.dat"
+$filePath = "$env:temp\proxy-gen.dat"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/werearecat/proxy-gen/main/proxy4-url" -OutFile $filePath
 # Đọc nội dung của file vào một mảng
 $fileContent = Get-Content -Path $filePath
